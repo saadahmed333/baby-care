@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand:wght@500&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 30px;
+  height: 40px;
+  font-size: 12px;
+  width: 100%;
+  background-color: #fbd3cb;
+}
+.top-header {
+  display: flex;
+  align-items: center;
+}
+.top-header div {
+  padding: 10px 10px 10px 15px;
+  border-left: 1px solid gainsboro;
+}
+.icons ul {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+.icons ul li {
+  list-style-type: none;
+}
+.icons ul li i {
+  font-size: 15px;
+}
+.top-header a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.email-link span {
+  padding-left: 5px;
+}
