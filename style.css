@@ -52,12 +52,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  position: fixed;
+  flex-wrap: wrap;
 }
 .nav-bar .logo img {
   height: 50px;
 }
-
+.nav-bar-responsiveItems {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  display: none;
+}
 /* Dropdown Button */
 .dropbtn {
   padding: 16px;
@@ -136,7 +142,32 @@ body {
   font-size: 20px;
   color: white;
 }
-
+.icons-container-responsive {
+  background-color: #ffb5a8;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+}
+.icons-container-responsive ul {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px #d6988d;
+  border-style: dashed;
+}
+.icons-container-responsive ul li {
+  list-style-type: none;
+}
+.icons-container-responsive ul li a {
+  font-size: 20px;
+  color: white;
+}
 .bars {
   background-color: #ffb5a8;
   height: 50px;
@@ -144,7 +175,7 @@ body {
   align-items: center;
   border-radius: 100%;
   padding: 5px;
-  display: none;
+  /* display: none; */
 }
 .bars i {
   font-size: 25px;
@@ -153,4 +184,82 @@ body {
   border: 2px dashed #d6988d;
   border-radius: 100%;
   padding: 8px;
+}
+
+
+.side-bar {
+  background-color: #333333;
+  color: white;
+  height: 100vh;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: -700px;
+  transition: all 0.8s linear;
+}
+.side-bar-header {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2d2d2d;
+}
+.side-bar-header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+}
+.side-bar-header ul li {
+  list-style-type: none;
+}
+.side-bar-header ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+.side-bar-header ul li .cross {
+  font-size: 40px;
+  color: #fff;
+}
+.side-bar-menu ul {
+  margin-top: 35px;
+  padding-left: 30px;
+}
+.side-bar-menu ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.side-bar-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    display: none;
+  }
+  .navbar-dropdowns {
+    display: none;
+  }
+  .icons-container {
+    display: none;
+  }
+  .nav-bar-responsiveItems {
+    display: block;
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-bar {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    flex-wrap: wrap;
+  }
 }
