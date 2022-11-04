@@ -84,6 +84,7 @@ body {
   border: none;
   background-color: #fff;
   /* font-weight: bold; */
+  font-weight: 500;
 }
 
 .dropbtn:hover {
@@ -117,6 +118,7 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #fbd3cb;
 }
 
 .dropdown:hover .dropbtn {
@@ -211,7 +213,6 @@ body {
   padding: 8px;
 }
 
-
 .side-bar {
   background-color: #333333;
   color: white;
@@ -220,6 +221,7 @@ body {
   position: absolute;
   top: 0px;
   left: -700px;
+  position: fixed;
   transition: all 0.8s linear;
 }
 
@@ -275,7 +277,7 @@ body {
 }
 
 .background-img {
-  background-image: url('https://media.istockphoto.com/photos/cleaning-tools-on-pink-background-with-copy-space-house-cleaning-and-picture-id1212915063?k=20&m=1212915063&s=170667a&w=0&h=i5305p4OeY64EhQPu6bkhSWgrvOp-pQ6jyjniSqOTOQ=');
+  background-image: url("https://media.istockphoto.com/photos/cleaning-tools-on-pink-background-with-copy-space-house-cleaning-and-picture-id1212915063?k=20&m=1212915063&s=170667a&w=0&h=i5305p4OeY64EhQPu6bkhSWgrvOp-pQ6jyjniSqOTOQ=");
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,6 +327,45 @@ body {
   color: #fff;
   font-size: 15px;
 }
+
+.gift-text h1 {
+  margin-top: 160px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+.gift-images {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gift-images .image1 {
+  width: 30%;
+}
+.gift-images .image1 img {
+  width: 100%;
+}
+
+.explore-text h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+.explore-images {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.explore-images .image1 {
+  width: 30%;
+}
+.explore-images .image1 img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     display: none;
@@ -345,7 +386,23 @@ body {
     justify-content: space-between;
   }
 }
-
+@media only screen and (max-width: 750px) {
+  .gift-text h1 {
+    font-size: 30px;
+  }
+  .gift-images .image1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .explore-text h1 {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .explore-images .image1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 @media only screen and (max-width: 750px) {
   .shops-text h1 {
     font-size: 60px;
