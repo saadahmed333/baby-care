@@ -399,6 +399,7 @@ body {
 .cards {
   width: 305px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 .product {
   height: 400px;
@@ -421,9 +422,8 @@ body {
   font-size: 14px;
 }
 .cards-img {
-  border: 2px solid black;
+  cursor: pointer;
 }
-
 
 .cards-text {
   margin-top: 10px;
